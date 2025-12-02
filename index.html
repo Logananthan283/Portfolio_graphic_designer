@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logananthan — UI & Graphic Designer Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
+  <link rel="icon" type="image/x-icon" href="/images/other/favicon.png">
+  
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="#home" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="images/other/logo.png" alt="Logo Mark">
+      </span>
+      <span>Logananthan</span>
+    </a>
+
+    <nav class="nav" id="desktopNav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <div class="mobile-nav" id="mobileMenu" hidden aria-hidden="true">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="section" id="home">
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+        <span class="eyebrow reveal">Graphic Designer • UI Designer • Manual Tester </span>
+
+        <h1 class="glitch max-width-h1" data-text="Crafting modern visual identities">
+          Crafting modern visual identities
+          <span class="accent reveal">that connect emotionally & communicate clearly.</span>
+        </h1>
+
+        <p class="lead reveal">
+          I create clean, meaningful design systems, interface layouts, Instagram creatives,
+          product branding and visual storytelling that elevate businesses.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="#portfolio" class="btn btn-primary magnetic">View Portfolio <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-ghost magnetic">Let's Talk</a>
+        </div>
+
+        <ul class="stats reveal">
+          <li><strong id="count-figma">0</strong><span>Figma & UI Projects</span></li>
+          <li><strong id="count-posts">0</strong><span>Instagram Posts</span></li>
+          <li><strong id="count-ecom">0</strong><span>Shopify Sites</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-media reveal">
+        <div class="card-visual">
+          <img src="images/other/1.jpg" alt="Portfolio cover" />
+          <span class="badge">Designer</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about-band section" id="about">
+    <div class="container about-grid">
+
+      <div class="reveal">
+  <h2 class="section-title">About Me</h2>
+  <p>
+    I’m a detail-oriented <strong>Graphic & UI Designer</strong> who blends minimal aesthetics with user-focused interaction design. My work is driven by clear hierarchy, refined typography, and thoughtful layouts that scale seamlessly across devices.
+  </p>
+
+  <p>Key achievements and experience:</p>
+  <ul>
+    <li>Created 50+ Instagram post designs that maintain consistent branding, clean composition, and strong storytelling through visual hierarchy.</li>
+    <li>Executed 5+ end-to-end UI/UX projects in Figma — covering research, wireframing, component creation, UI kits, and high-fidelity prototypes.</li>
+    <li>Developed and optimized a Shopify store with UX-driven improvements, focusing on navigation clarity, product layout structure, mobile responsiveness, and conversion-friendly design.</li>
+    <li>Hands-on experience in eCommerce workflows — product page layouts, collection structuring, PDP/PLP improvement, and theme customization for better user flow.</li>
+    <li>Performed manual testing on 5+ websites, identifying UI inconsistencies, interaction issues, browser-compatibility problems, and accessibility gaps to refine overall user experience.</li>
+  </ul>
+
+  <p>
+    I prioritize clean spacing, consistent alignment, and cohesive system thinking. Whether designing a social asset, an interface, or an eCommerce layout, my goal is to create experiences that are visually minimal, structurally clear, and easy for users to navigate.
+  </p>
+</div>
+
+<div class="about-list reveal">
+  <h3 class="section-title">Tools & Strengths</h3>
+  <ul>
+    <li><strong>Graphic Design:</strong> Canva, Affinity Designer — brand visuals, marketing assets, and scalable layouts.</li>
+    <li><strong>UI/UX in Figma:</strong> Design systems, UI kits, component libraries, prototype flows, and developer-ready handoff.</li>
+    <li><strong>Typography & Color Systems:</strong> Type hierarchy, modular scaling, accessible contrast, and cohesive color palettes.</li>
+    <li><strong>Responsive Layouts:</strong> Grid systems, adaptive spacing, mobile-first thinking, and component behavior across breakpoints.</li>
+    <li><strong>Shopify & eCommerce:</strong> Theme customization, PDP & PLP layout optimization, UX improvements, navigation flow, and conversion-focused design decisions.</li>
+    <li><strong>Manual Testing & QA:</strong> Cross-browser testing, usability checks, visual bug detection, interaction validation, and reporting actionable improvements.</li>
+  </ul>
+</div>
+
+
+    </div>
+  </section>
+
+  <section class="section" id="portfolio">
+    <div class="container reveal">
+      <h2 class="section-title">Portfolio</h2>
+
+      <div class="filters" role="tablist" aria-label="Filter portfolio">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="figma">Web & Mobile Designs</button>
+        <button class="filter" data-filter="posts">Graphics Design</button>
+        <button class="filter" data-filter="shopify">Shopify Site</button>
+      </div>
+
+      <div class="portfolio-grid" id="grid" role="list"></div>
+    </div>
+  </section>
+
+  <section class="section" id="testing-cards" aria-labelledby="testing-title">
+    <div class="container reveal">
+      <h2 id="testing-title" class="section-title">Tested Sites</h2>
+
+      <ul class="card-list testing-grid"> 
+        
+        <li class="testing-card">
+          <strong>eSafe – HSE Maintenance & Safety Management System</strong>
+          <span class="fake-link">Internal Test Environment (Login Required)</span>
+          <p class="description">
+           eSafe is a Health, Safety, and Environment (HSE) management system used in Saudi Arabia. 
+           It supports inspection workflows, hazard reporting, permit-to-work (PTW) processes, machinery maintenance tracking, and incident management. 
+           The platform helps organizations monitor safety compliance, streamline maintenance tasks, and ensure adherence to HSE standards.
+          </p>
+        </li>
+
+        <li class="testing-card">
+          <strong>HSE-MS – Port Health, Safety & Environment Management System </strong>
+          <span class="fake-link">Internal Test Environment (Login Required)</span>
+          <p class="description">
+           HSE-MS is a port-focused Health, Safety, and Environment management system used in Qatar. 
+           It supports port inspection activities, hazard identification, permit-to-work (PTW) operations, machinery and equipment management, and incident reporting within port facilities. 
+           The system helps maintain safety compliance, streamline operational workflows, and align port operations with Qatar’s HSE regulations
+          </p>
+        </li>
+        
+        <li class="testing-card">
+          <strong>Channel Tower Trading – Electrical & Surveillance Contract Management System</strong>
+          <span class="fake-link">Internal Test Environment (Login Required)</span>
+          <p class="description">Channel Tower Trading is a contract management system used for handling electrical equipment installation projects, with a primary focus on surveillance and camera setups. 
+            The system helps track client contracts, manage equipment deployment, and monitor installation progress. It also includes staff management features for assigning tasks, tracking team performance, and coordinating on-site activities.
+          </p>
+        </li>
+
+        <li class="testing-card">
+          <strong>Sri Venkateswara Diwali Chit Management System</strong>
+          <span class="fake-link">Internal Test Environment (Login Required)</span>
+          <p class="description">
+            This application is used to manage and track chit fund amounts for customers. 
+            It allows admins to record monthly contributions, update member details, and monitor payment status. 
+            The system helps maintain accurate financial tracking and ensures transparency in chit management.
+          </p>
+        </li>
+
+        <li class="testing-card">
+          <strong>Dayaa Sat Vision Billing & Collection System</strong>
+          <span class="fake-link">Internal Test Environment (Login Required)</span>
+          <p class="description">
+            A system used to track monthly cable TV and internet payment collections from customers. 
+            It includes staff management features that allow admins to assign collection responsibilities, track staff performance, and monitor daily updates. 
+            The platform improves revenue tracking, operational accuracy, and overall workflow efficiency.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact-band section" id="contact">
+    <div class="container contact-grid">
+
+      <div class="reveal">
+        <h2 class="section-title">Let's Work Together</h2>
+        <p>If you need UI layouts, branding, or social creatives — let’s talk.</p>
+
+        <a href="images/other/Logananthan.pdf" download class="btn btn-primary magnetic download-btn">
+    Download Resume <i class="fa-solid fa-download"></i>
+</a>
+      </div>
+    
+
+      <aside class="contact-card reveal">
+        <h3>Contact Info</h3>
+        <p><strong>Email</strong><br><a href="mailto:Logananthan10023082@gmail.com">Logananthan10023082@gmail.com</a></p>
+        <p><strong>Phone</strong><br>+91 63743 05335</p>
+        <p>
+          <a href="https://www.linkedin.com/in/logananthan-dhanasekar" target="_blank">LinkedIn</a><br>
+          <a href="https://github.com/Logananthan283" target="_blank">GitHub</a>
+        </p>
+      </aside>
+
+    </div>
+  </section>
+
+  
+
+</main>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-inner" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <img id="modalImg" src="" alt="">
+    <h2 id="modalTitle"></h2>
+    <div id="modalDesc"></div>
+    <div id="modalLinks" class="modal-links"></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Logananthan — All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
